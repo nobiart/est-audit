@@ -1,0 +1,164 @@
+body {background: #FFF; font-family: Verdana, Geneva, sans-serif; font-size: 12px; color: #7A6969;}
+a:active,a:focus {outline: expression(hideFocus='true');}
+.wrapper {width: 960px; margin: 0 auto; position: relative;}
+.clr {clear: both;}
+p,h1,h2,h3,h4,h5,h6 {line-height: 150%;}
+h1 {font-size: 30px;}
+h2 {font-size: 22px;}
+h3 {font-size: 18px;}
+h4 {font-size: 14px;}
+h5 {font-size: 12px;}
+h6 {font-size: 11px;}
+.clear {clear: both;}
+
+/* ======================== header ======================== */
+.header {width: 100%; height: 165px;}
+.logo {width: 150px; height: 140px; float: left; margin-top: 10px;}
+.right-box-head {width: 200px; height: 90px; float: right; margin-top: 40px;}
+.search-form {width: 200px; height: 25px;}
+.search-form form input[type=text] {width: 178px; height: 26px; line-height: 24px; padding: 0 10px; background: #fdfdfc; border: 1px solid #c8c8c8; border-radius: 3px; box-shadow: inset 0px 1px 3px 0 #e7e7e6;}
+.search-form form input[type=submit] {padding: 0 10px; line-height: 24px; margin: 10px 0; float: right; text-align: center; cursor: pointer; border: none; background: #3A2F23; border-radius: 3px; color: #fff;}
+.search-form form input[type=submit]:hover {background: #9B8F83;}
+.head-text-center {width: 400px; height: 100px; float: left; margin: 35px 0 0 80px;}
+.head-text-center p {text-align: right; color: #635240; margin: 5px 0;}
+.head-text-center a {float: right;color: #32AAD6;margin-top: 10px;text-align: right;text-decoration: underline;}
+.head-text-center a:hover {text-decoration: none;}
+
+/* ======================== navigation ======================== */
+.navigation {width: 100%; height: 70px; background: #F1EEEA; margin: 0 0 20px 0; position: relative; z-index: 100;}
+.navi {height: 70px; width: 100%;}
+ul.navi li {float: left; line-height: 70px; position: relative;}
+ul.navi li:hover, ul.navi li.active {background: #32AAD6;}
+ul.navi li:hover a, ul.navi li.active a {color: #fff;}
+ul.navi a {line-height: 70px; display: block; color: #917758; text-decoration: none; padding: 0 11px; text-transform: uppercase;}
+ul.navi a:hover {background: #32AAD6; color: #FFF; text-decoration: none;}
+ul.navi ul {position: absolute; top: 70px; left: 0; width: auto; display: none; background: #2296C1; border-bottom: 1px solid #32AAD6;}
+ul.navi ul li {line-height: 25px; width: 100%;}
+ul.navi li:hover ul {display: block;}
+ul.navi ul a {line-height: 25px; text-align: left; color: #FFF; text-transform: none; white-space: nowrap;}
+ul.navi ul a:hover {color: #917758; background: #fff;}
+ul.navi li:first-child a {padding: 0 14px;}
+ul.navi li ul li:first-child a {padding: 0 11px;}
+ul.navi li:nth-child(4) a {padding: 0 14px;}
+ul.navi li ul li:nth-child(4) a {padding: 0 11px;}
+ul.navi li:nth-child(4) ul li a {padding: 0 11px;}
+ul.navi li:last-child a {padding: 0 13px;}
+ul.navi li ul li:last-child a {padding: 0 11px;}
+ul.navi li:last-child ul li a {padding: 0 11px;}
+
+/* ======================== slide show ======================== */
+.slideShow {width: 100%; height: 280px;}
+.slide {width: 960px; height: 280px; position: relative;}
+.slide  h4 {position: absolute; width: auto; text-align: right; right: 15px; top: 15px; color: #fff; font-size: 26px; font-weight: normal; text-shadow: #333 1px 1px; background: rgba(50,170,214,0.6); padding: 5px 15px; line-height: 150%; font-family: 'Roboto Condensed', sans-serif;}
+
+/* ======================== container 2 ======================== */
+.container {width: 100%; min-height: 350px; background: url(../img/c2-bg.jpg) repeat;	margin-top: 30px; float: left;}
+
+.pageContent {padding: 25px 5px;}
+.pageContent a {text-decoration: underline; color: #32A9D6;}
+.pageContent a:hover {text-decoration: none;}
+
+.pageContent h3.pagetitle {color: #fff; font-size: 18px; font-weight: normal; text-shadow: 0 1px #666666; line-height: 150%; font-family: 'Roboto Condensed', sans-serif; margin: 0 0 20px 0; text-align: center;}
+.pageContent h3.pagetitle span {background: #32AAD6; letter-spacing: 0.2px; padding: 5px 10px;}
+.pageContent p {line-height: 150%; margin: 10px 0;}
+.pageContent p strong {color: #828282;}
+.pageContent ul {list-style: disc; padding: 0 0 0 30px;}
+.pageContent li {color: #828282; line-height: 150%; margin: 5px 0;}
+.pageContent ol {list-style: decimal; padding: 0 0 0 30px;}
+.pageContent p.justifyfull {text-align: justify;}
+
+.pageContent table {border: 1px dotted #999; border-collapse: collapse; margin: 5px auto; width: auto;}
+.pageContent table tr {border: 1px dotted #999; border-collapse: collapse;}
+.pageContent table tr td {padding: 5px 10px; border: 1px dotted #999; vertical-align: middle;}
+.pageContent table.withoutBorder {border: none;}
+.pageContent table.withoutBorder tr {border: none;}
+.pageContent table.withoutBorder tr td {border: none;}
+
+.border {border: 1px solid #919191; width: 540px; margin: 5px auto; padding: 10px;}
+.pageContent dl {color: #828282; line-height: 15px; margin: 10px 0;}
+.pageContent dd {padding: 0 0 0 30px;}
+
+ul.pageList {width: 100%; list-style: none; padding: 0;}
+ul.pageList li {line-height: 180%; margin: 5px 0; display: block;}
+
+table.justifyleft {margin-left: 0;}
+
+.pageContent ol.pagePub li a {color: #828282;}
+
+
+/* ============ news block ============ */
+.newsBlock {width: 400px; float: left; margin: 20px 0 40px 0;}
+.newsBlock h3 {font-size: 18px; padding: 0 0 0 5px; font-weight: normal; color: #3A2F23; font-family: 'Roboto Condensed', sans-serif;}
+.item {width: 390px; margin: 10px 0 5px 0; background: #f4f2f0; float: left; padding: 5px 5px 20px 5px; position: relative;}
+.item img {float: left; margin: 0 10px 5px 0; padding: 3px; border: 1px solid #EDE7E2; background: #F2DFBA;}
+.item p {padding-right: 5px; color: #917758;}
+.item span.date {font-size: 11px; color: #2889AC; margin: -3px 0 0 0; display: block; padding: 0 0 5px 0;}
+.item a.nTitle {color: #32A9D6; text-decoration: underline; display: block; margin: 0 0 3px 0;}
+.item a.nTitle:hover {text-decoration: none;}
+a.readAll {color: #32A9D6; text-decoration: none; font-size: 11px; position: absolute; border-bottom: 1px dotted #32A9D6; bottom: 4px; right: 5px; margin: 5px 0 0 0;}
+a.readAll:hover {text-decoration: none; border-bottom: none; bottom: 5px;}
+
+.shortNews {background: #F4F2F0; margin: 5px 0 15px 0; padding: 10px; float: left; width: 940px;}
+.shortNews h3 {line-height: 170%; font-size: 16px; font-family: "Roboto Condensed",sans-serif; font-weight: normal; letter-spacing: 0.3px;}
+.shortNews img {float: left; margin: 0 10px 5px 0; padding: 3px; background: #F2DFBA;}
+.shortNews small {font-size: 11px; color: #A38C8C;}
+
+.pagination {width: 100%; float: left; margin: 15px 0;}
+.pagination p {text-align: center;}
+.pagination a {padding: 0 3px;}
+.pagination span {padding: 0 3px;}
+
+/* ============ advertise ============ */
+.siteOffers {width: 530px; margin: 20px 0 40px 0; float: right;}
+.siteOffers h3 {font-size: 18px; font-weight: normal; color: #3A2F23; float: left; font-family: 'Roboto Condensed', sans-serif;}
+.offers {width: 100%; float: right; margin: 10px 0 20px 0;}
+.offers p {margin: 5px 0; color: #917758;}
+.offers p.top {margin: 0; margin-bottom: 5px; font-size: 16px; color: #32A9D6;}
+.offers a {color: #32A9D6; text-decoration: underline;}
+.offers a:hover {text-decoration: none;}
+.offers a.read {float: right; padding: 1px; color: #32A9D6; text-decoration: none; font-size: 11px; border-bottom: 1px dotted #32A9D6;}
+.offers a.read:hover {text-decoration: none; border: none; padding: 1px 1px 2px 1px;}
+
+/* ======================== footer ======================== */
+.footer {width: 100%; height: 210px; background: #3A2F23; float: left;}
+.footerLeftBlock {width: 190px; height: 210px; float: left;}
+.footerLeftBlock a {color: #3A2F23; background: #9B8F83; text-shadow: 0 1px #999999; font-size: 16px; text-decoration: none; line-height: 40px; text-align: center; margin: 30px 0 50px 0; display: block;}
+.footerLeftBlock a:hover {text-decoration: none; color: #fff;}
+.footerLeftBlock p {float: left; margin-top: 40px; color: #A19A91;}
+
+.footerRightBlock {width: 335px; height: 185px; float: right; text-align: right; padding-top: 25px;}
+.footerRightBlock p {color: #A19A91;}
+.footerRightBlock a {color: #32AAD6; padding: 10px 0; font-size: 13px; text-decoration: underline;}
+.footerRightBlock a:hover {text-decoration: none;}
+
+.footerLinks {width: 425px; height: 200px; float: left;}
+.footerLinks ul {float: left; margin: 25px 15px 5px 25px;}
+.footerLinks li {line-height: 18px; text-transform: uppercase;}
+.footerLinks a {color: #917758; text-decoration: underline;}
+.footerLinks a:hover {text-decoration: none; color: #fff;}
+
+
+.feedback {width: 465px; margin: 10px auto;}
+.feedback form {width: 100%; float: left; margin: 0 0 15px 0;}
+.feedback form label {width: 100%; line-height: 30px; float: left; margin: 5px 0;}
+.feedback form label span {float: left;}
+.feedback form label input {float: right; width: 280px; height: 26px; padding: 0 10px; border: 1px solid #ccc; background: #F9F9F9;}
+.feedback form label input:focus {background: #fff;}
+.feedback form label textarea {float: right; width: 280px; height: 90px; padding: 5px 10px; border: 1px solid #ccc; background: #F9F9F9;}
+.feedback form label textarea:focus {background: #fff;}
+.feedback form p {width: 100%; float: left;}
+.feedback form p img { float: left; margin: 10px 0 5px 170px;}
+.feedback form input[type=submit] {padding: 0 15px; line-height: 30px; text-align: center; cursor: pointer; border: 1px solid #ccc; background: #3A2F23; float: right; color: #fff; margin: 15px 0;}
+.feedback form input[type=submit]:hover {background: #9B8F83;}
+
+.shortPartner {width: 180px; height: 180px; float: left; margin: 10px 30px 15px 30px;}
+.shortPartner:nth-child(4n+1) {margin: 10px 0 15px 30px;}
+.shortPartner a.partLogo {width: 178px; height: 128px; display: block; float: left; text-align: center;}
+.shortPartner a.partLogo img {max-width: 100%; max-height: 100%; border: 1px solid #ccc; display: table-cell; vertical-align: middle;}
+.shortPartner p {width: 100%; margin: 5px 0; text-align: center; float: left;}
+
+.paging1 {line-height: 30px; margin: 5px 0 15px 0;}
+.ajaxSearch_result {margin: 5px 0;}
+
+#accordion {width: 100%; float: left; margin: 5px 0 25px 0;}
+.ui-accordion-content p {position: relative; margin: 5px 0;}
