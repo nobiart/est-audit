@@ -1,33 +1,11 @@
 body {
-    background: #FFF;
     font-family: Verdana, Geneva, sans-serif;
     font-size: 12px;
     color: #7A6969;
 }
 
-a:active,
-a:focus {
-    outline: expression(hideFocus='true');
-}
-
-.wrapper {
-    width: 960px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.clr {
-    clear: both;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    line-height: 150%;
+p, h1, h2, h3, h4, h5, h6 {
+    line-height: 1.5;
 }
 
 h1 {
@@ -54,54 +32,50 @@ h6 {
     font-size: 11px;
 }
 
-.clear {
-    clear: both;
-}
-
 /* ======================== header ======================== */
 .header {
-    width: 100%;
     margin-bottom: 15px;
 }
 
-.logo {
+.header__logo {
     margin-top: 10px;
 }
 
-.logo a {
+.header__logo__link {
     display: block;
 }
 
-.header-text p {
+.header__address {
+    text-align: right;
     color: #635240;
     margin: 0 0 10px 0;
 }
 
-.header-text a {
+.header__address__link {
     color: #32AAD6;
     text-decoration: underline;
 }
 
-.header-text a:hover {
+.header__address__link:hover {
     text-decoration: none;
 }
 
-.search-form {
+.header__search-form {
     text-align: right;
 }
 
-.search-form .form-control {
+.header__search-form .form-control {
     max-width: 200px;
 }
 
-.search-form .btn {
+.header__search-form .btn {
     border: none;
     background: #3A2F23;
     border-radius: 3px;
     color: #fff;
 }
 
-.search-form .btn:hover {
+.header__search-form .btn:hover {
     background: #9B8F83;
 }
 
@@ -143,50 +117,49 @@ h6 {
 
 /* ======================== navigation ======================== */
 
-.navigation {
-    display: flex;
+.nav {
     justify-content: space-between;
     height: 70px;
     margin-bottom: 20px;
-    padding: 0;
-    list-style: none;
     background: #F1EEEA;
     position: relative;
     z-index: 1;
 }
 
-.navigation li {
-    line-height: 70px;
+.nav-item {
     position: relative;
     flex-grow: 1;
 }
 
-.navigation li:hover,
-.navigation li.active {
+.nav-item:hover,
+.nav-item.active {
     background: #32AAD6;
 }
 
-.navigation li:hover a,
-.navigation li.active a {
+.nav-item:hover a,
+.nav-item.active a {
     color: #fff;
 }
 
-.navigation a {
-    display: block;
-    line-height: 70px;
-    text-align: center;
+.nav-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 0;
     color: #917758;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-.navigation a:hover {
+.nav-link:hover {
     background: #32AAD6;
     color: #FFF;
     text-decoration: none;
 }
 
-.navigation ul {
+.nav ul {
     position: absolute;
     top: 70px;
     left: 0;
@@ -198,16 +171,17 @@ h6 {
     border-bottom: 1px solid #32AAD6;
 }
 
-.navigation ul li {
+.nav ul li {
     line-height: 25px;
     width: 100%;
 }
 
-.navigation li:hover ul {
+.nav li:hover ul {
     display: block;
 }
 
-.navigation ul a {
+.nav ul a {
+    display: block;
     padding: 3px 15px;
     line-height: 25px;
     text-align: left;
@@ -216,9 +190,10 @@ h6 {
     white-space: nowrap;
 }
 
-.navigation ul a:hover {
+.nav ul a:hover {
     color: #917758;
     background: #fff;
+    text-decoration: none;
 }
 
 /* ======================== slide show ======================== */
@@ -256,9 +231,6 @@ h6 {
 .page {
     background: url(../img/c2-bg.jpg) repeat;
     margin-top: 30px;
-}
-
-.page {
     padding: 25px 0;
 }
 
@@ -288,27 +260,24 @@ h6 {
     padding: 5px 10px;
 }
 
-/* ----------------------- */
-
-
-.pageContent p strong {
-    color: #828282;
+.pageContent {
+    padding-bottom: 50px;
 }
 
 .pageContent ul {
     list-style: disc;
-    padding: 0 0 0 30px;
-}
-
-.pageContent li {
-    color: #828282;
-    line-height: 150%;
-    margin: 5px 0;
+    padding: 0 0 0 25px;
 }
 
 .pageContent ol {
     list-style: decimal;
-    padding: 0 0 0 30px;
+    padding: 0 0 0 25px;
+}
+
+.pageContent li {
+    color: #828282;
+    line-height: 1.5;
+    margin: 5px 0;
 }
 
 .pageContent p.justifyfull {
@@ -384,13 +353,9 @@ table.justifyleft {
 
 
 /* ============ news block ============ */
-.newsBlock {
-    width: 400px;
-    float: left;
-    margin: 20px 0 40px 0;
-}
 
-.newsBlock h3 {
+
+.block-title {
     font-size: 18px;
     padding: 0 0 0 5px;
     font-weight: normal;
@@ -399,12 +364,12 @@ table.justifyleft {
 }
 
 .item {
-    width: 390px;
-    margin: 10px 0 5px 0;
+    margin-top: 15px;
     background: #f4f2f0;
-    float: left;
-    padding: 5px 5px 20px 5px;
-    position: relative;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .item img {
@@ -416,11 +381,10 @@ table.justifyleft {
 }
 
 .item p {
-    padding-right: 5px;
     color: #917758;
 }
 
-.item span.date {
+.item__date {
     font-size: 11px;
     color: #2889AC;
     margin: -3px 0 0 0;
@@ -428,32 +392,32 @@ table.justifyleft {
     padding: 0 0 5px 0;
 }
 
-.item a.nTitle {
+.item__title {
     color: #32A9D6;
     text-decoration: underline;
     display: block;
     margin: 0 0 3px 0;
 }
 
-.item a.nTitle:hover {
+.item__title:hover {
     text-decoration: none;
 }
 
-a.readAll {
+.item__read-all {
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.item__read-all a {
     color: #32A9D6;
     text-decoration: none;
     font-size: 11px;
-    position: absolute;
     border-bottom: 1px dotted #32A9D6;
-    bottom: 4px;
-    right: 5px;
-    margin: 5px 0 0 0;
 }
 
-a.readAll:hover {
+.item__read-all a:hover {
     text-decoration: none;
     border-bottom: none;
-    bottom: 5px;
 }
 
 /* -------------------------------------- */
@@ -503,19 +467,7 @@ a.readAll:hover {
 }
 
 /* ============ advertise ============ */
-.siteOffers {
-    width: 530px;
-    margin: 20px 0 40px 0;
-    float: right;
-}
 
-.siteOffers h3 {
-    font-size: 18px;
-    font-weight: normal;
-    color: #3A2F23;
-    float: left;
-    font-family: 'Roboto Condensed', sans-serif;
-}
 
 .offers {
     width: 100%;

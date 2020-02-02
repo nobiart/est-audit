@@ -1,293 +1,245 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Новости - Аудиторская компания ЭСТ- аудит</title>
-	<meta name="keywords" content="Новости">
-	<meta name="description" content="">
-	<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed&amp;subset=latin,cyrillic" rel="stylesheet"
-		type="text/css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link href="css/style.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Новости - Аудиторская компания ЭСТ- аудит</title>
+    <meta name="keywords" content="Новости">
+    <meta name="description" content="">
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-	<header class="header">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-3">
-					<div class="logo">
-						<a href="/" title="Аудиторская компания ЭСТ- аудит">
-							<img src="img/logo.png" alt="Аудиторская компания ЭСТ- аудит">
-						</a>
-					</div>
-				</div>
-				<div class="col-5">
-					<div class="header-text text-right">
-						<p>г.Алматы, ул.Байтурсынова 85 (уг.ул. Джамбула)</p>
-						<p>Тел: +7 (727) 292-15-15 / Факс: +7 (727) 292-97-92</p>
-						<a href="feedback.html">Обратная связь</a>
-					</div>
-				</div>
-				<div class="col-4 d-inline-flex justify-content-end">
-					<div class="search-form">
-						<form id="ajaxSearch_form" action="search-results.html" method="post">
-							<input type="hidden" name="advsearch" value="oneword">
-							<div class="form-group">
-								<input type="text" class="form-control form-control-sm" id="ajaxSearch_input"
-									name="search" placeholder="Поиск...">
-							</div>
-							<button class="btn btn-sm btn-primary" id="ajaxSearch_submit" name="sub"
-								type="submit">Искать</button>
-						</form>
-						<div class="AS_ajax_resultsIntroFailure"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+<header class="header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-3">
+                <div class="header__logo">
+                    <a class="header__logo__link" href="/" title="Аудиторская компания ЭСТ- аудит">
+                        <img src="img/logo.png" alt="Аудиторская компания ЭСТ- аудит">
+                    </a>
+                </div>
+            </div>
+            <div class="col-5">
+                <p class="header__address">г.Алматы, ул.Байтурсынова 85 (уг.ул. Джамбула)</p>
+                <p class="header__address">Тел: +7 (727) 292-15-15 / Факс: +7 (727) 292-97-92</p>
+                <p class="header__address">
+                    <a class="header__address__link" href="#">Обратная связь</a>
+                </p>
+            </div>
+            <div class="col-4 d-inline-flex justify-content-end">
+                <div class="header__search-form">
+                    <form id="ajaxSearch_form" action="#" method="post">
+                        <input type="hidden" name="advsearch" value="oneword">
+                        <div class="form-group">
+                            <label class="d-none" for="ajaxSearch_input"></label>
+                            <input type="text" class="form-control form-control-sm" id="ajaxSearch_input" name="search" placeholder="Поиск...">
+                        </div>
+                        <button class="btn btn-sm btn-primary" id="ajaxSearch_submit" name="sub" type="submit">Искать</button>
+                    </form>
+                    <div class="AS_ajax_resultsIntroFailure"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 
-	<div class="container">
-		<ul class="navigation">
-			<li><a href="http://est-audit.kz/" title="Главная">Главная</a></li>
-			<li><a href="/o-kompanii.html" title="О компании">О компании</a>
-				<ul>
-					<li><a href="/normativnye-dokumenty.html" title="Нормативные документы">Нормативные
-							документы</a></li>
-					<li><a href="/kodeks-professionalnoi-etiki.html" title="Кодекс профессиональной этики">Кодекс
-							профессиональной этики</a></li>
-					<li class="last"><a href="/rukovodstvo.html" title="Руководство">Руководство</a></li>
-				</ul>
-			</li>
-			<li class="active active"><a href="/novosti.html" title="Новости">Новости</a>
-				<ul>
-					<li><a href="/novosti/akcii.html" title="Акции">Акции</a></li>
-					<li class="last"><a href="/novosti/specpredlozheniya.html"
-							title="Спецпредложения">Спецпредложения</a></li>
-				</ul>
-			</li>
-			<li><a href="/uslugi.html" title="Услуги">Услуги</a>
-				<ul>
-					<li><a href="/audit-finansovoy-otchetnosti.html" title="Аудит финансовой отчетности">Аудит
-							финансовой отчетности</a></li>
-					<li><a href="/nalogovyy-audit.html" title="Налоговый аудит">Налоговый аудит</a></li>
-					<li><a href="/soglasovannye-procedury.html" title="Согласованные процедуры">Согласованные
-							процедуры</a></li>
-					<li><a href="/vnutrenii-audit.html" title="Внутренний аудит">Внутренний аудит</a></li>
-					<li><a href="/buhgalterskie-uslugi.html" title="Бухгалтерские услуги">Бухгалтерские
-							услуги</a>
-					</li>
-					<li><a href="/konsultacii-po-nalogooblozheniyu.html"
-							title="Консультации по налогообложению">Консультации по налогообложению</a></li>
-					<li><a href="/konsultacii-po-finansovomu-uchetu.html"
-							title="Консультации по финансовому учету">Консультации по финансовому учету</a>
-					</li>
-					<li><a href="/konsultacii.html" title="Консультации по упрощенному учету">Консультации
-							по
-							упрощенному учету</a></li>
-					<li><a href="/razrabotka-normativnyh-dokumentov.html"
-							title="Разработка нормативных документов">Разработка нормативных документов</a>
-					</li>
-					<li class="last"><a href="/formirovanie-godovoj-finansovoj-i-nalogovoj-otchetnosti.html"
-							title="Формирование годовой финансовой и налоговой отчетности">Формирование
-							отчетности</a></li>
-				</ul>
-			</li>
-			<li><a href="/obuchenie.html" title="Обучение">Обучение</a>
-				<ul>
-					<li><a href="/dipifr.html" title="DipIFR">DipIFR</a></li>
-					<li><a href="/cap-cipa.html" title="CAP | CIPA">CAP | CIPA</a></li>
-					<li><a href="/primenenie-msfo-na-praktike.html" title="Применение МСФО на практике">Применение
-							МСФО на практике</a></li>
-					<li><a href="/kursy-instituta-askeri-g-moskva.html"
-							title="Курсы института &quot;Аскери&quot; (г.Москва)">Курсы института "Аскери"
-							(г.Москва)</a></li>
-					<li><a href="/audit.html" title="Аудит">Аудит</a></li>
-					<li class="last"><a href="/dogovor.html" title="Договор на обучение">Договор на
-							обучение</a>
-					</li>
-				</ul>
-			</li>
-			<li><a href="/publikacii.html" title="Публикации">Публикации</a></li>
-			<li><a href="/partnery.html" title="Партнеры">Партнеры</a></li>
-			<li><a href="/razyasneniya-specialistov.html" title="Разъяснения специалистов">Разъяснения
-					специалистов</a>
-				<ul>
-					<li><a href="/po-msfo.html" title="по МСФО">по МСФО</a></li>
-					<li><a href="/po-nalogovomu-zakonodatelstvu.html" title="по Налоговому законодательству">по
-							Налоговому законодательству</a></li>
-					<li><a href="/po-grazhdanskomu-zakonodatelstvu.html" title="по Гражданскому законодательству">по
-							Гражданскому законодательству</a></li>
-					<li class="last"><a href="/prochie.html" title="прочие">прочие</a></li>
-				</ul>
-			</li>
-			<li class="last"><a href="/kontakty.html" title="Контакты">Контакты</a></li>
-		</ul>
-	</div>
+<div class="container">
+    <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="#" title="Главная">Главная</a></li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" title="О компании">О компании</a>
+            <ul>
+                <li><a href="#" title="Нормативные документы">Нормативные документы</a></li>
+                <li><a href="#" title="Кодекс профессиональной этики">Кодекс профессиональной этики</a></li>
+                <li><a href="#" title="Руководство">Руководство</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" title="Новости">Новости</a>
+            <ul>
+                <li><a href="#" title="Акции">Акции</a></li>
+                <li><a href="#" title="Спецпредложения">Спецпредложения</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" title="Услуги">Услуги</a>
+            <ul>
+                <li><a href="#" title="Аудит финансовой отчетности">Аудит финансовой отчетности</a></li>
+                <li><a href="#" title="Налоговый аудит">Налоговый аудит</a></li>
+                <li><a href="#" title="Согласованные процедуры">Согласованные процедуры</a></li>
+                <li><a href="#" title="Внутренний аудит">Внутренний аудит</a></li>
+                <li><a href="#" title="Бухгалтерские услуги">Бухгалтерские услуги</a></li>
+                <li><a href="#" title="Консультации по налогообложению">Консультации по налогообложению</a></li>
+                <li><a href="#" title="Консультации по финансовому учету">Консультации по финансовому учету</a></li>
+                <li><a href="#" title="Консультации по упрощенному учету">Консультации по упрощенному учету</a></li>
+                <li><a href="#" title="Разработка нормативных документов">Разработка нормативных документов</a></li>
+                <li><a href="#" title="Формирование годовой финансовой и налоговой отчетности">Формирование отчетности</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" title="Обучение">Обучение</a>
+            <ul>
+                <li><a href="#" title="DipIFR">DipIFR</a></li>
+                <li><a href="#" title="CAP | CIPA">CAP | CIPA</a></li>
+                <li><a href="#" title="Применение МСФО на практике">Применение МСФО на практике</a></li>
+                <li><a href="#" title="Курсы института &quot;Аскери&quot; (г.Москва)">Курсы института "Аскери" (г.Москва)</a></li>
+                <li><a href="#" title="Аудит">Аудит</a></li>
+                <li><a href="#" title="Договор на обучение">Договор на обучение</a></li>
+            </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Публикации">Публикации</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Партнеры">Партнеры</a></li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" title="Разъяснения специалистов">Разъяснения специалистов</a>
+            <ul>
+                <li><a href="#" title="по МСФО">по МСФО</a></li>
+                <li><a href="#" title="по Налоговому законодательству">по Налоговому законодательству</a></li>
+                <li><a href="#" title="по Гражданскому законодательству">по Гражданскому законодательству</a></li>
+                <li><a href="#" title="прочие">прочие</a></li>
+            </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Контакты">Контакты</a></li>
+    </ul>
+</div>
 
-	<section class="welcome-image">
-		<div class="container">
-			<div class="big-image">
-				<h4>Мы рады приветствовать Вас на нашем сайте!</h4>
-			</div>
-		</div>
-	</section>
-
-	<section class="page">
-		<div class="container">
-			<h3 class="pagetitle"><span>Новости</span></h3>
-			<div class="row">
-				<div class="col-12">
-					<div class="shortNews">
-						<h3 class="shortNews__title">
-							<a
-								href="novosti/o-vvedenii-v-deystvie-izmeneniy-v-nalogovom-kodekse-po-voprosam-transporta.html">О
-								введении в действие изменений в Налоговом кодексе по вопросам транспорта</a>
-						</h3>
-						<p><small>27.01.2014</small></p>
-						<p>Законом РК от 4 июля 2013 года № 132-V были внесены изменения и дополнения в некоторые
-							законодательные акты Республики Казахстан по вопросам транспорта.</p>
-						<p>Так, с 1 января 2014 года вступили в действие положения ...</p>
-						<p><a
-								href="novosti/o-vvedenii-v-deystvie-izmeneniy-v-nalogovom-kodekse-po-voprosam-transporta.html">подробнее...</a>
-						</p>
-					</div>
-				</div>
-				<div class="col-12">
-					<div class="shortNews">
-						<h3 class="shortNews__title"><a
-								href="novosti/o-poryadke-ischisleniya-uderzhaniya-nachisleniya-i-perechisleniya-oppv-s-1-yanvarya-2014-goda.html">О
-								порядке исчисления, удержания (начисления) и перечисления ОППВ с 1 января 2014 года</a>
-						</h3>
-						<p><small>27.01.2014</small></p>
-
-						<p>С 1 января 2014 года агенты, использующие труд работников, профессии которых предусмотрены
-							перечнем производств, работ, профессий работников, в пользу которых вкладчиками ОППВ за счет
-							собственных средств ...
-						</p>
-						<p><a
-								href="novosti/o-poryadke-ischisleniya-uderzhaniya-nachisleniya-i-perechisleniya-oppv-s-1-yanvarya-2014-goda.html">подробнее...</a>
-						</p>
-					</div>
-				</div>
-				<div class="col-12">
-					<div class="shortNews">
-						<h3 class="shortNews__title"><a
-								href="novosti/pos-terminaly-v-kazahstane-predlozhili-osvobodit-ot-ih-ustanovki-nekotoryh-biznesmenov.html">POS-терминалы:
-								В Казахстане предложили освободить от их установки некоторых бизнесменов</a></h3>
-						<p><small>14.01.2014</small></p>
-
-						<p>Национальная палата предпринимателей настаивает на расширении перечня предпринимателей, для
-							которых не должно быть обязательной нормой устанавливать POS-терминалы, передает
-							корреспондент
-							Tengrinews.kz со ...
-						</p>
-						<p><a
-								href="novosti/pos-terminaly-v-kazahstane-predlozhili-osvobodit-ot-ih-ustanovki-nekotoryh-biznesmenov.html">подробнее...</a>
-						</p>
-					</div>
-				</div>
-				<div class="col-12">
-					<div class="shortNews">
-						<h3 class="shortNews__title"><a
-								href="novosti/obyazatelnaya-ustanovka-pos-terminalov-v-kazahstane-otsrochena-do-1-iyulya-2014-goda-minfin.html">Обязательная
-								установка POS-терминалов в Казахстане отсрочена до 1 июля 2014 года - Минфин</a></h3>
-						<p><small>05.12.2013</small></p>
-
-						<p>Обя&shy;за&shy;тель&shy;ная уста&shy;нов&shy;ка POS-тер&shy;ми&shy;на&shy;лов в
-							Ка&shy;зах&shy;стане от&shy;сро&shy;че&shy;на на пол&shy;го&shy;да - до 1 июля 2014
-							го&shy;да,
-							со&shy;об&shy;ща&shy;ет ИА Но&shy;во&shy;сти-Ка&shy;зах&shy;стан со ссыл&shy;кой на ...
-						</p>
-						<p><a
-								href="novosti/obyazatelnaya-ustanovka-pos-terminalov-v-kazahstane-otsrochena-do-1-iyulya-2014-goda-minfin.html">подробнее...</a>
-						</p>
-					</div>
-				</div>
-				<div class="col-12">
-					<div class="shortNews">
-						<h3 class="shortNews__title"><a
-								href="novosti/bolee-3-tys-nalogoplatelschikov-narushili-poryadok-primeneniya-kontrolno-kassovyh-mashin.html">Более
-								3 тыс. налогоплательщиков нарушили порядок применения контрольно-кассовых машин</a></h3>
-						<p><small>03.12.2013</small></p>
-
-						<p>Налоговыми органами г.Алматы с начала года по результатам проведенных проверок установлены 3
-							209
-							налогоплательщиков, которые допустили нарушения порядка применения контрольно-кассовых
-							машин. В
-							отношении ...
-						</p>
-						<p><a
-								href="novosti/bolee-3-tys-nalogoplatelschikov-narushili-poryadok-primeneniya-kontrolno-kassovyh-mashin.html">подробнее...</a>
-						</p>
-					</div>
-				</div>
-				<div class="col-12">
-					<ul class="pagination">
-						<li class="page-item"><a class="page-link" href="#">Назад</a></li>
-						<li class="page-item active"><a class="page-link" href="#">1</a></li>
-						<li class="page-item"><a class="page-link" href="#">2</a></li>
-						<li class="page-item"><a class="page-link" href="#">Далее</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-sm-3">
-					<div class="footerLeftBlock">
-						<a href="feedback.html">Обратная связь</a>
-						<p>© 2011, ТОО "Э.С.Т. аудит"</p>
-					</div>
-				</div>
-				<div class="col-12 col-sm-3">
-					<ul class="footer-nav">
-						<li><a href="http://est-audit.kz/" title="Главная">Главная</a></li>
-						<li><a href="/o-kompanii.html" title="О компании">О компании</a></li>
-						<li class="active"><a href="/novosti.html" title="Новости">Новости</a></li>
-						<li><a href="/uslugi.html" title="Услуги">Услуги</a></li>
-						<li><a href="/obuchenie.html" title="Обучение">Обучение</a></li>
-						<li><a href="/publikacii.html" title="Публикации">Публикации</a></li>
-						<li><a href="/partnery.html" title="Партнеры">Партнеры</a></li>
-						<li><a href="/razyasneniya-specialistov.html" title="Разъяснения специалистов">Разъяснения
-								специалистов</a></li>
-						<li class="last"><a href="/kontakty.html" title="Контакты">Контакты</a></li>
-					</ul>
-				</div>
-				<div class="col-12 col-sm-6">
-					<div class="footerRightBlock">
-						<p>г.Алматы, ул.Байтурсынова 85 (уг.ул. Джамбула)</p>
-						<p>Тел:+7 (727) 292-15-15 / Факс:+7 (727) 292-97-92</p>
-						<p><a href="kontakty.html">Контактная информация</a></p>
-						<p><a class="course" href="http://www.kurstenge.kz/"
-								title="Курс валют доллара евро рубля в Казахстане" target="_blank"><img
-									src="http://www.kurstenge.kz/widget.php"
-									alt="Курс валют доллара евро рубля в Казахстане"></a>
-							<embed style="float:left; margin:5px 0 0 100px;" width="80" height="80"
-								type="application/x-shockwave-flash" src="http://dezzi.ru/images/clock82.swf"
-								pluginspage="http://www.macromedia.com/go/getflashplayer" wmode="window" loop="true"
-								autoplay="true" quality="high">
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-	</script>
+<section class="page">
+    <div class="container">
+        <h3 class="pagetitle"><span>Новости</span></h3>
+        <div class="row">
+            <div class="col-12">
+                <div class="shortNews">
+                    <h3 class="shortNews__title">
+                        <a href="#">О введении в действие изменений в Налоговом кодексе по вопросам транспорта</a>
+                    </h3>
+                    <p><small>27.01.2014</small></p>
+                    <p>Законом РК от 4 июля 2013 года № 132-V были внесены изменения и дополнения в некоторые законодательные акты Республики Казахстан по вопросам транспорта.</p>
+                    <p>Так, с 1 января 2014 года вступили в действие положения ...</p>
+                    <p>
+                        <a href="#">подробнее...</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="shortNews">
+                    <h3 class="shortNews__title">
+                        <a href="#">О порядке исчисления, удержания (начисления) и перечисления ОППВ с 1 января 2014 года</a>
+                    </h3>
+                    <p><small>27.01.2014</small></p>
+                    <p>С 1 января 2014 года агенты, использующие труд работников, профессии которых предусмотрены перечнем производств, работ, профессий работников, в пользу которых вкладчиками ОППВ за счет собственных средств ...</p>
+                    <p>
+                        <a href="#">подробнее...</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="shortNews">
+                    <h3 class="shortNews__title">
+                        <a href="#">POS-терминалы: В Казахстане предложили освободить от их установки некоторых бизнесменов</a>
+                    </h3>
+                    <p><small>14.01.2014</small></p>
+                    <p>Национальная палата предпринимателей настаивает на расширении перечня предпринимателей, для которых не должно быть обязательной нормой устанавливать POS-терминалы, передает корреспондент Tengrinews.kz со ...</p>
+                    <p>
+                        <a href="#">подробнее...</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="shortNews">
+                    <h3 class="shortNews__title">
+                        <a href="#">Обязательная установка POS-терминалов в Казахстане отсрочена до 1 июля 2014 года - Минфин</a>
+                    </h3>
+                    <p><small>05.12.2013</small></p>
+                    <p>Обязательная установка POS-терминалов в Казахстане отсрочена на полгода - до 1 июля 2014 года, сообщает ИА Новости-Казахстан со ссылкой на ...</p>
+                    <p>
+                        <a href="#">подробнее...</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="shortNews">
+                    <h3 class="shortNews__title">
+                        <a href="#">Более 3 тыс. налогоплательщиков нарушили порядок применения контрольно-кассовых машин</a>
+                    </h3>
+                    <p><small>03.12.2013</small></p>
+                    <p>Налоговыми органами г.Алматы с начала года по результатам проведенных проверок установлены 3 209 налогоплательщиков, которые допустили нарушения порядка применения контрольно-кассовых машин. В отношении ...</p>
+                    <p>
+                        <a href="#">подробнее...</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-12">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Назад</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Далее</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-3">
+                <div class="footerLeftBlock">
+                    <a href="#">Обратная связь</a>
+                    <p>© 2011, ТОО "Э.С.Т. аудит"</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-3">
+                <ul class="footer-nav">
+                    <li>
+                        <a href="#" title="Главная">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#" title="О компании">О компании</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Новости">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Услуги">Услуги</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Обучение">Обучение</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Публикации">Публикации</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Партнеры">Партнеры</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Разъяснения специалистов">Разъяснения специалистов</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Контакты">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="footerRightBlock">
+                    <p>г.Алматы, ул.Байтурсынова 85 (уг.ул. Джамбула)</p>
+                    <p>Тел:+7 (727) 292-15-15 / Факс:+7 (727) 292-97-92</p>
+                    <p>
+                        <a href="#">Контактная информация</a>
+                    </p>
+                    <p>
+                        <a class="course" href="http://www.kurstenge.kz/" title="Курс валют доллара евро рубля в Казахстане" target="_blank"><img src="http://www.kurstenge.kz/widget.php" alt="Курс валют доллара евро рубля в Казахстане"></a>
+                        <embed style="float:left; margin:5px 0 0 100px;" width="80" height="80" type="application/x-shockwave-flash" src="http://dezzi.ru/images/clock82.swf" pluginspage="http://www.macromedia.com/go/getflashplayer" wmode="window" loop="true" autoplay="true" quality="high">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.4.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
-
 </html>
