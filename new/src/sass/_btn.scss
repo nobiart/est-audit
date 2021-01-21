@@ -1,0 +1,38 @@
+// Buttons
+
+.btn {
+    border-radius: 0;
+}
+
+.btn-primary {
+    border-color: $text;
+    background-color: $text;
+
+    &:hover {
+        border-color: $text-dark;
+        background-color: $text-dark;
+    }
+    &:active {
+        box-shadow: none;
+        border-color: $text-dark;
+        background-color: $text-dark;
+    }
+    &:focus {
+        box-shadow: none;
+        border-color: $text-dark;
+        background-color: $text-dark;
+    }
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    border-color: $text-dark;
+    background-color: $text-dark;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba($text-dark, 0.3);
+}
