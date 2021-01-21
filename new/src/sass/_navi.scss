@@ -4,32 +4,24 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    padding-left: 0;
-    list-style: none;
     background: $bg-light;
     position: relative;
     z-index: 1;
 
-    &-item {
+    $this: &;
+
+    &__item {
         position: relative;
         flex-grow: 1;
-
-        &:hover,
-        &.active {
-            background: $link-color;
-
-            a {
-                color: #ffffff;
-            }
-        }
     }
 
-    &-link {
+    &__link {
         display: inline-flex;
         align-items: center;
         justify-content: center;
         width: 100%;
         padding: 26px 0;
+        font-size: 13px;
         color: $text-light;
         text-decoration: none;
         text-transform: uppercase;
@@ -37,15 +29,16 @@
         &:hover {
             background: $link-color;
             color: #ffffff;
-            text-decoration: none;
         }
 
-        &:visited {
-            color: $text-light;
+        #{$this}__item.active &,
+        #{$this}__item:hover & {
+            background: $link-color;
+            color: #ffffff;
         }
     }
 
-    ul {
+    &__sublist {
         position: absolute;
         top: 70px;
         left: 0;
@@ -56,34 +49,27 @@
         background: $bg-blue;
         border-bottom: 1px solid $link-color;
 
-        li {
-            line-height: 2.1;
-            width: 100%;
-        }
-
-        a {
+        #{$this}__item:hover & {
             display: block;
-            padding: 3px 15px;
-            line-height: 25px;
-            text-align: left;
-            color: #FFF;
-            text-transform: none;
-            text-decoration: none;
-            white-space: nowrap;
-
-            &:hover {
-                color: $text-light;
-                background: #fff;
-                text-decoration: none;
-            }
         }
     }
 
-    li {
+    &__subitem {
+        line-height: 2.1;
+    }
+
+    &__sublink {
+        display: block;
+        padding: 3px 15px;
+        color: #ffffff;
+        line-height: 2;
+        text-transform: none;
+        text-decoration: none;
+        white-space: nowrap;
+
         &:hover {
-            ul {
-                display: block;
-            }
+            color: $text-light;
+            background: #ffffff;
         }
     }
 }

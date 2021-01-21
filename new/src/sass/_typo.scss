@@ -39,9 +39,7 @@ a {
     text-decoration: underline;
 
     &:hover {
-        text-decoration: none;
-    }
-    &:visited {
         color: $link-hover-color;
+        text-decoration: none;
     }
 }
