@@ -6,6 +6,10 @@
     padding: 25px 0;
 }
 
+.main {
+    padding-bottom: 50px;
+}
+
 .page-title {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 400;
@@ -20,10 +24,6 @@
         background: $link-color;
         letter-spacing: 0.2px;
     }
-}
-
-.page-content {
-    padding-bottom: 50px;
 }
 
 .page-content ul {
