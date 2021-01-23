@@ -1,7 +1,7 @@
 // Page
 
 .content {
-    background: url(../img/c2-bg.jpg) repeat;
+    background-image: url(../img/c2-bg.jpg);
     margin-top: 30px;
     padding: 25px 0;
 }
@@ -26,54 +26,101 @@
     }
 }
 
-.page-content ul {
-    list-style: disc;
-    padding: 0 0 0 25px;
-}
+// Typo for dynamic content
+.page-content {
+    p {
+        margin-bottom: 10px;
 
-.page-content ol {
-    list-style: decimal;
-    padding: 0 0 0 25px;
-}
+        &.justifyfull {
+            text-align: justify;
+        }
+    }
 
-.page-content li {
-    color: #828282;
-    line-height: 1.5;
-    margin: 5px 0;
-}
+    b {
+        font-weight: 700;
+    }
 
-.page-content p.justifyfull {
-    text-align: justify;
-}
+    li {
+        color: #828282;
+        line-height: 1.5;
+        margin: 3px 0;
+    }
 
-.page-content table {
-    border: 1px dotted #999;
-    border-collapse: collapse;
-    margin: 5px auto;
-    width: auto;
-}
+    ul {
+        list-style: disc;
+        padding-left: 25px;
 
-.page-content table tr {
-    border: 1px dotted #999;
-    border-collapse: collapse;
-}
+        &.pageList {
+            width: 100%;
+            list-style: none;
+            padding: 0;
 
-.page-content table tr td {
-    padding: 5px 10px;
-    border: 1px dotted #999;
-    vertical-align: middle;
-}
+            li {
+                line-height: 180%;
+                margin: 5px 0;
+                display: block;
+            }
+        }
+    }
 
-.page-content table.withoutBorder {
-    border: none;
-}
+    ol {
+        list-style: decimal;
+        padding-left: 25px;
 
-.page-content table.withoutBorder tr {
-    border: none;
-}
+        &.pagePub {
+            li {
+                a {
+                    color: #828282;
+                }
+            }
+        }
+    }
 
-.page-content table.withoutBorder tr td {
-    border: none;
+    dl {
+        color: #828282;
+        line-height: 1.2;
+        margin: 10px 0;
+    }
+
+    dd {
+        padding-left: 30px;
+    }
+
+    table {
+        border: 1px dotted #999;
+        border-collapse: collapse;
+        margin: 5px auto;
+        width: auto;
+
+        $table: &;
+
+        &.withoutBorder {
+            border: none;
+        }
+
+        tr {
+            border: 1px dotted #999;
+            border-collapse: collapse;
+
+            #{$table}.withoutBorder & {
+                border: none;
+            }
+
+            td {
+                padding: 5px 10px;
+                border: 1px dotted #999;
+                vertical-align: middle;
+
+                #{$table}.withoutBorder & {
+                    border: none;
+                }
+            }
+        }
+
+        &.justifyleft {
+            margin-left: 0;
+        }
+    }
 }
 
 .border {
@@ -81,34 +128,4 @@
     width: 540px;
     margin: 5px auto;
     padding: 10px;
-}
-
-.page-content dl {
-    color: #828282;
-    line-height: 15px;
-    margin: 10px 0;
-}
-
-.page-content dd {
-    padding: 0 0 0 30px;
-}
-
-ul.pageList {
-    width: 100%;
-    list-style: none;
-    padding: 0;
-}
-
-ul.pageList li {
-    line-height: 180%;
-    margin: 5px 0;
-    display: block;
-}
-
-table.justifyleft {
-    margin-left: 0;
-}
-
-.page-content ol.pagePub li a {
-    color: #828282;
 }
