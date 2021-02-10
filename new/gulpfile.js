@@ -93,11 +93,11 @@ function js() {
         .pipe(plumber())
         //.pipe(rigger())
         .pipe(dest(path.public.js))
-        .pipe(uglify())
-        .pipe(rename({
+        //.pipe(uglify())
+        /*.pipe(rename({
             suffix: ".min",
             extname: ".js"
-        }))
+        }))*/
         .pipe(dest(path.public.js))
         .pipe(browsersync.stream());
 }

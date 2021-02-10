@@ -10,6 +10,15 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: $text;
+
+    &.nav-open {
+        //position: fixed;
+        overflow: hidden;
+    }
+}
+
+* {
+    box-sizing: border-box;
 }
 
 .container {
