@@ -1,7 +1,7 @@
 // Navigation
 
 .nav-mobile {
-    display: inline-flex;
+    display: none;
     align-items: center;
     padding: 16px;
     margin: 5px 0 15px;
@@ -107,6 +107,10 @@
 }
 
 @media (max-width: 991px) {
+    .nav-mobile {
+        display: inline-flex;
+    }
+
     .nav {
         display: block;
         position: fixed;
@@ -140,7 +144,29 @@
 
         &__link {
             justify-content: flex-start;
-            padding: 12px;
+            padding: 12px 30px 12px 12px;
+            position: relative;
+
+            #{$this}__item.has-child & {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    right: 12px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    border-top: 6px solid $text-light;
+                    border-right: 6px solid transparent;
+                    border-bottom: 0;
+                    border-left: 6px solid transparent;
+                }
+            }
+
+            #{$this}__item.has-child.active & {
+                &::after {
+                    border-top: 6px solid #ffffff;
+                    transform: rotateX(180deg) translateY(50%);
+                }
+            }
 
             &:hover {
                 color: $text-light;

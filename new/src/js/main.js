@@ -1,7 +1,6 @@
 window.addEventListener('load', function () {
     let navBlock = document.querySelector('.nav')
     let navItem = document.querySelectorAll('.nav__item')
-    let navItemShow = document.getElementsByClassName('active')
     let navMobileTrigger = document.querySelector('.nav-mobile')
     let navOverlay = document.querySelector('.nav-overlay')
 
@@ -17,15 +16,18 @@ window.addEventListener('load', function () {
         document.body.classList.remove('nav-open')
     })
 
-    navItem.forEach(function(item, i, navItem) {
-        item.addEventListener('click', function(e) {
-            if (navItemShow.length > 0 && navItemShow[0] !== this) {
-                navItemShow[0].classList.remove('active')
-            }
-            this.classList.toggle('active')
-            if (item.children[1].length !== 0) {
-                e.preventDefault()
-            }
+    if (window.innerWidth < 992) {
+        navItem.forEach(function(item, i, navItem) {
+            let navItemShow = navBlock.getElementsByClassName('active')
+            item.addEventListener('click', function(e) {
+                if (navItemShow.length > 0 && navItemShow[0] !== this) {
+                    navItemShow[0].classList.remove('active')
+                }
+                this.classList.toggle('active')
+                if (item.classList.contains('has-child')) {
+                    e.preventDefault()
+                }
+            })
         })
-    })
+    }
 })
