@@ -65,3 +65,22 @@
         }
     }*/
 }
+
+@media (max-width: 767px) {
+    .aside {
+        flex-direction: column;
+
+        &-item {
+            flex-basis: 100%;
+            margin-bottom: 20px;
+
+            &:first-child {
+                margin-right: 0;
+            }
+
+            &:last-child {
+                margin-left: 0;
+            }
+        }
+    }
+}
