@@ -28,7 +28,7 @@ const path = {
         images: "public/img/"
     },
     source: {
-        html: 	"src/html/index.html",
+        html: 	"src/html/**/*.html",
         js: 	"src/js/*.js",
         css: 	"src/sass/style.scss",
         images: "src/img/**/*.{jpg,png,gif,svg}"

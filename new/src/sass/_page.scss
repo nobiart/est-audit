@@ -129,3 +129,32 @@
     margin: 5px auto;
     padding: 10px;
 }
+
+// Pagination
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 20px 0 10px;
+
+    &__item {
+        padding: 8px 12px;
+        color: $text;
+        line-height: 1.25;
+        text-decoration: none;
+        background-color: #fff;
+        transition: all 150ms ease-in-out;
+
+        &:hover {
+            background-color: $text;
+            color: #ffffff;
+        }
+
+        &.active {
+            background-color: $text;
+            color: #ffffff;
+        }
+    }
+}

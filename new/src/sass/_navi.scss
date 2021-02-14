@@ -43,8 +43,6 @@
     position: relative;
     z-index: 1;
 
-    $this: &;
-
     &__item {
         position: relative;
         flex-grow: 1;
