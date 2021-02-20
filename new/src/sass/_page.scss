@@ -197,3 +197,72 @@
         margin: 10px 0;
     }
 }
+
+// Feedback
+.feedback {
+    max-width: 465px;
+    margin: 10px auto;
+}
+
+.feedback-form {
+    width: 100%;
+    margin: 0 0 15px;
+    text-align: right;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+
+    &__label {
+        line-height: 2.15;
+    }
+
+    &__input {
+        width: 280px;
+        padding: 0 10px;
+        line-height: 1.85;
+        border: 1px solid #ccc;
+        background: #F9F9F9;
+        transition: background-color 150ms ease-in-out;
+
+        &:focus {
+            background-color: #fff;
+        }
+    }
+
+    &__textarea {
+        min-height: 90px;
+        width: 280px;
+        padding: 5px 10px;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 14px;
+        line-height: 1.85;
+        resize: vertical;
+        border: 1px solid #ccc;
+        background: #F9F9F9;
+        transition: background-color 150ms ease-in-out;
+
+        &:focus {
+            background-color: #fff;
+        }
+    }
+
+    &__btn {
+        align-self: flex-end;
+        margin-top: 15px;
+        padding: 10px 20px;
+        color: #fff;
+        border: none;
+        background-color: $text;
+        transition: background-color .15s ease-in-out;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: $text-dark;
+        }
+    }
+}
