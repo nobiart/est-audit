@@ -89,10 +89,10 @@
     }
 
     table {
-        border: 1px dotted #999;
+        width: 100%;
+        margin: 10px auto;
+        border: 1px solid #999;
         border-collapse: collapse;
-        margin: 5px auto;
-        width: auto;
 
         $table: &;
 
@@ -101,17 +101,11 @@
         }
 
         tr {
-            border: 1px dotted #999;
-            border-collapse: collapse;
-
-            #{$table}.withoutBorder & {
-                border: none;
-            }
 
             td {
-                padding: 5px 10px;
-                border: 1px dotted #999;
-                vertical-align: middle;
+                padding: 8px 12px;
+                border: 1px solid #999;
+                vertical-align: top;
 
                 #{$table}.withoutBorder & {
                     border: none;
