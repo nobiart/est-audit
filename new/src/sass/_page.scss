@@ -266,3 +266,27 @@
         }
     }
 }
+
+@media (max-width: 575px) {
+    .feedback {
+        max-width: 350px;
+    }
+
+    .feedback-form {
+        text-align: left;
+
+        &__row {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        &__input {
+            width: 100%;
+            padding: 3px 10px;
+        }
+
+        &__textarea {
+            width: 100%;
+        }
+    }
+}
