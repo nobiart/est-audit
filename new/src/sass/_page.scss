@@ -51,14 +51,11 @@
         margin-bottom: 10px;
 
         &.pageList {
-            width: 100%;
             list-style: none;
             padding: 0;
 
             li {
-                line-height: 180%;
-                margin: 5px 0;
-                display: block;
+                margin: 10px 0;
             }
         }
     }
