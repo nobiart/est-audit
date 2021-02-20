@@ -2,7 +2,6 @@
 
 .content {
     background-image: url(../img/c2-bg.jpg);
-    margin-top: 30px;
     padding: 25px 0;
     flex: 1 0 auto;
 }
@@ -155,5 +154,46 @@
             background-color: $text;
             color: #ffffff;
         }
+    }
+}
+
+// Partners
+.partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.partner {
+    width: 180px;
+    height: 180px;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__logo {
+        max-width: 100%;
+        max-height: 100%;
+        border: 1px solid #ccc;
+        min-height: 0;
+    }
+
+    &__name {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .partners {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .partner {
+        flex: 0 0 30%;
+        margin: 10px 0;
     }
 }
