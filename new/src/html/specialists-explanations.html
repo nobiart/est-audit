@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru">
+@@include('partials/head.html', {
+'title': 'Разъяснения специалистов | Аудиторская компания ЭСТ- аудит'
+})
+<body>
+<div class="site-grid">
+    @@include('partials/header.html')
+    @@include('partials/navigation.html')
+
+    <section class="content">
+        <div class="container">
+            <main class="main">
+                <h3 class="page-title">
+                    <span>Разъяснения специалистов</span>
+                </h3>
+                <div class="page-content">
+                    <ul class="pageList">
+                        <li><a href="/po-msfo.html" title="по МСФО" >по МСФО</a></li>
+                        <li><a href="/po-nalogovomu-zakonodatelstvu.html" title="по Налоговому законодательству" >по Налоговому законодательству</a></li>
+                        <li><a href="/po-grazhdanskomu-zakonodatelstvu.html" title="по Гражданскому законодательству" >по Гражданскому законодательству</a></li>
+                        <li class="last"><a href="/prochie.html" title="прочие" >прочие</a></li>
+                    </ul>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    @@include('partials/footer.html')
+</div>
+</body>
+</html>
